@@ -1,5 +1,2 @@
-Caracas,La Carlota,Venezuela
 Caracas,Maiquetia,Venezuela
-Caracas,Maiquetia,Venezuela
-Caracas,Maiquetia,Venezuela
-Caracas,Maiquetia,Venezuela
+Paris,Bourdeous,Francia
