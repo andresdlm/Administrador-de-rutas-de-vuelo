@@ -47,5 +47,6 @@ public class Repositorio {
         for (int i = 0; i < ciudad.length ; i++) {
             System.out.println(ciudad[i] + "");
         }
+        System.out.println("Hola");
     }
 }
