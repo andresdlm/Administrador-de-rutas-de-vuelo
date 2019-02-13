@@ -180,8 +180,23 @@ public class Lista_ciudades extends javax.swing.JFrame {
         agregar[0] = c.getNombre();
         agregar[1] = c.getAeropuerto();
         agregar[2] = c.getPais();
+
+        String[][] matriz = new String[5][3];
+
+
+
+        tablaCiudades.setModel(new javax.swing.table.DefaultTableModel(
+                new Object [][] {
+                        {null, null, null},
+                        {null, null, null},
+                        {null, null, null},
+                        {null, null, null}
+                },
+                new String [] {
+                        "Nombre", "Aeropuerto", "País"
+                }
+        ));
         
-        tablaCiudades.AddRow(agregar); 
     }
 
     private void NombCiu_fieldlActionPerformed(java.awt.event.ActionEvent evt) {                                               
