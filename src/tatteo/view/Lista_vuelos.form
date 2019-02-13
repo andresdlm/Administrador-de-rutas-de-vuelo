@@ -26,29 +26,27 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="list_vuelos_tab" alignment="1" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="add_vuelo_bt" min="-2" max="-2" attributes="0"/>
+                      <Component id="add_vuelo_btn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="del_vuelo_bt" min="-2" max="-2" attributes="0"/>
+                      <Component id="del_vuelo_btn" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="mod_vuelo_bt" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="inicio_bt" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
+                      <Component id="modif_vuelo_btn" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="ir_inicio_btn" max="32767" attributes="0"/>
+                          <Component id="plan_vuelo_btn" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="152" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -59,15 +57,17 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" pref="179" max="-2" attributes="0"/>
+              <Component id="list_vuelos_tab" min="-2" pref="179" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="add_vuelo_bt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="del_vuelo_bt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="mod_vuelo_bt" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="inicio_bt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="add_vuelo_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="del_vuelo_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="modif_vuelo_btn" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="plan_vuelo_btn" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="45" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="ir_inicio_btn" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -81,7 +81,7 @@
         <Property name="text" type="java.lang.String" value="Lista de Vuelos"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+    <Container class="javax.swing.JScrollPane" name="list_vuelos_tab">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
@@ -132,48 +132,74 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="add_vuelo_bt">
+    <Component class="javax.swing.JButton" name="add_vuelo_btn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Swis721 Lt BT" size="12" style="0"/>
+          <Font name="Swis721 Lt BT" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Agregar Vuelo"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/tatteo/img/add.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Add Vuelo"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="add_vuelo_btActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="add_vuelo_btnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="del_vuelo_bt">
+    <Component class="javax.swing.JButton" name="del_vuelo_btn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Swis721 Lt BT" size="12" style="0"/>
+          <Font name="Swis721 Lt BT" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Eliminar Vuelo"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/tatteo/img/delete.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Del Vuelo"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="del_vuelo_btActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="del_vuelo_btnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="mod_vuelo_bt">
+    <Component class="javax.swing.JButton" name="modif_vuelo_btn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Swis721 Lt BT" size="12" style="0"/>
+          <Font name="Swis721 Lt BT" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Modificar Vuelo"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/tatteo/img/conf.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Modif Vuelo"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mod_vuelo_btActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="modif_vuelo_btnActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="inicio_bt">
+    <Component class="javax.swing.JButton" name="plan_vuelo_btn">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Swis721 Lt BT" size="12" style="0"/>
+          <Font name="Swis721 Lt BT" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/tatteo/img/track.png"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Generar Plan "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="plan_vuelo_btnActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ir_inicio_btn">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Swis721 Lt BT" size="14" style="1"/>
+        </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/tatteo/img/home.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Inicio"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="inicio_btActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ir_inicio_btnActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

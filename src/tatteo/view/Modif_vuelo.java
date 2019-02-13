@@ -1,13 +1,13 @@
+
 package tatteo.view;
 
 
-public class Agg_vuelo extends javax.swing.JFrame {
+public class Modif_vuelo extends javax.swing.JFrame {
 
     
-    public Agg_vuelo() {
+    public Modif_vuelo() {
         initComponents();
         setLocationRelativeTo(this);
-        
     }
 
     /**
@@ -20,9 +20,9 @@ public class Agg_vuelo extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        Origen_lbl = new javax.swing.JLabel();
-        Destino_lbl = new javax.swing.JLabel();
-        Dur_lbl = new javax.swing.JLabel();
+        modif_btn = new javax.swing.JButton();
+        ver_lista_btn = new javax.swing.JButton();
+        ir_inicio_btn = new javax.swing.JButton();
         NumVuelo_lbl = new javax.swing.JLabel();
         Aero_lbl = new javax.swing.JLabel();
         Costo_lbl = new javax.swing.JLabel();
@@ -31,25 +31,37 @@ public class Agg_vuelo extends javax.swing.JFrame {
         dur_field = new javax.swing.JTextField();
         numF_field = new javax.swing.JTextField();
         aero_field = new javax.swing.JTextField();
+        Origen_lbl = new javax.swing.JLabel();
         price_field = new javax.swing.JTextField();
-        AddListVue_btn = new javax.swing.JButton();
-        ver_lista_btn = new javax.swing.JButton();
-        ir_inicio_btn = new javax.swing.JButton();
-        AddCiu_btn = new javax.swing.JButton();
+        Destino_lbl = new javax.swing.JLabel();
+        Dur_lbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Swis721 Lt BT", 1, 18)); // NOI18N
-        jLabel1.setText("Agregar Nuevo Vuelo");
+        jLabel1.setText("Modificar Vuelo");
 
-        Origen_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        Origen_lbl.setText("Origen");
+        modif_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        modif_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/conf.png"))); // NOI18N
+        modif_btn.setText("Modificar");
 
-        Destino_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        Destino_lbl.setText("Destino");
+        ver_lista_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        ver_lista_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/list.png"))); // NOI18N
+        ver_lista_btn.setText("Ver Lista ");
+        ver_lista_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ver_lista_btnActionPerformed(evt);
+            }
+        });
 
-        Dur_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        Dur_lbl.setText("Duración");
+        ir_inicio_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        ir_inicio_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/home.png"))); // NOI18N
+        ir_inicio_btn.setText("Inicio");
+        ir_inicio_btn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ir_inicio_btnActionPerformed(evt);
+            }
+        });
 
         NumVuelo_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
         NumVuelo_lbl.setText("Numero de Vuelo");
@@ -66,41 +78,14 @@ public class Agg_vuelo extends javax.swing.JFrame {
             }
         });
 
-        AddListVue_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        AddListVue_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/menu.png"))); // NOI18N
-        AddListVue_btn.setText("Añadir a Lista");
-        AddListVue_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddListVue_btnActionPerformed(evt);
-            }
-        });
+        Origen_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        Origen_lbl.setText("Origen");
 
-        ver_lista_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        ver_lista_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/list.png"))); // NOI18N
-        ver_lista_btn.setText("Ver Lista");
-        ver_lista_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ver_lista_btnActionPerformed(evt);
-            }
-        });
+        Destino_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        Destino_lbl.setText("Destino");
 
-        ir_inicio_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        ir_inicio_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/home.png"))); // NOI18N
-        ir_inicio_btn.setText("Inicio");
-        ir_inicio_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ir_inicio_btnActionPerformed(evt);
-            }
-        });
-
-        AddCiu_btn.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
-        AddCiu_btn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/add.png"))); // NOI18N
-        AddCiu_btn.setText("Add Ciudad");
-        AddCiu_btn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddCiu_btnActionPerformed(evt);
-            }
-        });
+        Dur_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
+        Dur_lbl.setText("Duración");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,10 +94,14 @@ public class Agg_vuelo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(105, 105, 105)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
+                        .addGap(22, 22, 22)
+                        .addComponent(modif_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ver_lista_btn)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(ir_inicio_btn))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(Destino_lbl)
@@ -138,27 +127,22 @@ public class Agg_vuelo extends javax.swing.JFrame {
                                 .addComponent(Costo_lbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(price_field, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AddCiu_btn))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(AddListVue_btn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ver_lista_btn)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ir_inicio_btn, javax.swing.GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)))
-                .addContainerGap(16, Short.MAX_VALUE))
+                        .addGap(54, 54, 54)))
+                .addGap(18, 18, 18))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(136, 136, 136))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Origen_lbl)
-                    .addComponent(ori_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(AddCiu_btn))
+                    .addComponent(ori_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Destino_lbl)
@@ -179,12 +163,12 @@ public class Agg_vuelo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Costo_lbl)
                     .addComponent(price_field, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(AddListVue_btn)
+                    .addComponent(modif_btn)
                     .addComponent(ver_lista_btn)
                     .addComponent(ir_inicio_btn))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(27, 27, 27))
         );
 
         pack();
@@ -195,31 +179,18 @@ public class Agg_vuelo extends javax.swing.JFrame {
     }//GEN-LAST:event_ori_fieldActionPerformed
 
     private void ir_inicio_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_inicio_btnActionPerformed
-        
+        // TODO add your handling code here:
         Inicio inicio = new Inicio();
         inicio.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_ir_inicio_btnActionPerformed
 
     private void ver_lista_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ver_lista_btnActionPerformed
-        
+        // TODO add your handling code here:
         Lista_vuelos vuelos = new Lista_vuelos();
         vuelos.setVisible(true);
         this.setVisible(false);
-       
     }//GEN-LAST:event_ver_lista_btnActionPerformed
-
-    private void AddListVue_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddListVue_btnActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_AddListVue_btnActionPerformed
-
-    private void AddCiu_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddCiu_btnActionPerformed
-        
-        Lista_ciudades ciudades = new Lista_ciudades();
-        ciudades.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_AddCiu_btnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,28 +209,28 @@ public class Agg_vuelo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Agg_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modif_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Agg_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modif_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Agg_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modif_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Agg_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Modif_vuelo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Agg_vuelo().setVisible(true);
+                new Modif_vuelo().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AddCiu_btn;
-    private javax.swing.JButton AddListVue_btn;
     private javax.swing.JLabel Aero_lbl;
     private javax.swing.JLabel Costo_lbl;
     private javax.swing.JLabel Destino_lbl;
@@ -271,11 +242,10 @@ public class Agg_vuelo extends javax.swing.JFrame {
     private javax.swing.JTextField dur_field;
     private javax.swing.JButton ir_inicio_btn;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton modif_btn;
     private javax.swing.JTextField numF_field;
     private javax.swing.JTextField ori_field;
     private javax.swing.JTextField price_field;
     private javax.swing.JButton ver_lista_btn;
     // End of variables declaration//GEN-END:variables
-
-    
 }
