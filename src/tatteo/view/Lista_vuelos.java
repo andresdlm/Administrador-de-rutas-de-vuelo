@@ -164,8 +164,8 @@ public class Lista_vuelos extends javax.swing.JFrame {
 
     private void add_vuelo_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_add_vuelo_btnActionPerformed
         
-        Agg_vuelo addVuelo = new Agg_vuelo();
-        addVuelo.setVisible(true);
+        Agg_vuelo aggVuelo = new Agg_vuelo();
+        aggVuelo.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_add_vuelo_btnActionPerformed
 
