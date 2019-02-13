@@ -5,6 +5,7 @@ import tatteo.Ciudad;
 import tatteo.Grafo;
 
 import java.awt.event.ActionEvent;
+import java.util.ArrayList;
 
 
 public class Lista_ciudades extends javax.swing.JFrame {
@@ -167,37 +168,41 @@ public class Lista_ciudades extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_ir_inicio_btnActionPerformed
 
+    ArrayList<Ciudad> listaCiudad = new ArrayList<Ciudad>();
+
     private void AddListCiu_btnActionPerformed(ActionEvent evt) {
         // TODO add your handling code here:
-        Grafo g = new Grafo (); 
-        String name = NombCiu_fieldl.getText();
-        String airport = AeroCiu_field.getText();
-        String country = PaisCiu_field.getText();
-        Ciudad c = new Ciudad(name, airport, country);
-        
-        g.addCiudad(c);
-        String [] agregar = new String [3];
-        agregar[0] = c.getNombre();
-        agregar[1] = c.getAeropuerto();
-        agregar[2] = c.getPais();
+       //Grafo g = new Grafo();
 
-        String[][] matriz = new String[5][3];
+        Ciudad ciudad = new Ciudad(NombCiu_fieldl.getText(), AeroCiu_field.getText(), PaisCiu_field.getText());
+        listaCiudad.add(ciudad);
+        //g.addCiudad(ciudad);
+        mostrar();
 
-
-
-        tablaCiudades.setModel(new javax.swing.table.DefaultTableModel(
-                new Object [][] {
-                        {null, null, null},
-                        {null, null, null},
-                        {null, null, null},
-                        {null, null, null}
-                },
-                new String [] {
-                        "Nombre", "Aeropuerto", "País"
-                }
-        ));
-        
     }
+
+
+
+    
+    public void mostrar(){
+            String[][] matriz = new String[listaCiudad.size()][3];
+            for(int i=0; i<5;i++){
+                matriz[i][0]=listaCiudad.get(i).getNombre();
+                matriz[i][1]=listaCiudad.get(i).getAeropuerto();
+                matriz[i][2]=listaCiudad.get(i).getPais();
+            }
+
+            tablaCiudades.setModel(new javax.swing.table.DefaultTableModel(
+                    matriz,
+                    new String [] {
+                            "Nombre", "Aeropuerto", "País"
+                    }
+            ));
+
+
+
+    }
+    
 
     private void NombCiu_fieldlActionPerformed(java.awt.event.ActionEvent evt) {                                               
         // TODO add your handling code here:
