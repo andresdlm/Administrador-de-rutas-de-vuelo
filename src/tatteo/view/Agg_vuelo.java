@@ -1,6 +1,8 @@
 package tatteo.view;
 
 
+import tatteo.Repositorio;
+
 public class Agg_vuelo extends javax.swing.JFrame {
 
     private static String origen;
@@ -8,7 +10,7 @@ public class Agg_vuelo extends javax.swing.JFrame {
     private static String duracion;
     private static String nVuelo;
     private static String aerolinea;
-    private static String costoDeVoleto;
+    private static String costoDeBoleto;
 
 
     public Agg_vuelo() {
@@ -198,7 +200,7 @@ public class Agg_vuelo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ori_fieldActionPerformed(java.awt.event.ActionEvent evt) {
-        
+
     }//GEN-LAST:event_ori_fieldActionPerformed
 
     private void ir_inicio_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_inicio_btnActionPerformed
@@ -214,19 +216,27 @@ public class Agg_vuelo extends javax.swing.JFrame {
         vuelos.setVisible(true);
         this.setVisible(false);
        
-    }//GEN-LAST:event_ver_lista_btnActionPerformed
+    }
 
     private void AddListVue_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddListVue_btnActionPerformed
-        // TODO add your handling code here:
+        origen = ori_field.getText();
+        destino = dest_field.getText();
+        duracion = dur_field.getText();
+        nVuelo = numF_field.getText();
+        aerolinea = aero_field.getText();
+        costoDeBoleto = price_field.getText();
+
+        Repositorio repositorio = new Repositorio();
+        repositorio.IngresarDatos(Integer.parseInt(nVuelo), aerolinea, Integer.parseInt(costoDeBoleto), Integer.parseInt(duracion));
         
-    }//GEN-LAST:event_AddListVue_btnActionPerformed
+    }
 
     private void AddCiu_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddCiu_btnActionPerformed
         
         Lista_ciudades ciudades = new Lista_ciudades();
         ciudades.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_AddCiu_btnActionPerformed
+    }
 
     /**
      * @param args the command line arguments

@@ -1,9 +1,16 @@
 
 package tatteo.view;
+import javax.swing.table.DefaultTableModel;
+import tatteo.Ciudad;
+import tatteo.Grafo;
+
+import java.awt.event.ActionEvent;
 
 
 public class Lista_ciudades extends javax.swing.JFrame {
 
+
+    //DefaultTableModel tablaCiudades = new DefaultTableModel();
     
     public Lista_ciudades() {
         initComponents();
@@ -30,7 +37,7 @@ public class Lista_ciudades extends javax.swing.JFrame {
         PaisCiu_lbl = new javax.swing.JLabel();
         AddListCiu_btn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaCiudades = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +57,12 @@ public class Lista_ciudades extends javax.swing.JFrame {
         AddCiu_lbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tatteo/img/add.png"))); // NOI18N
         AddCiu_lbl.setText("Agregar Nueva Ciudad");
 
+        NombCiu_fieldl.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NombCiu_fieldlActionPerformed(evt);
+            }
+        });
+
         NombCiu_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
         NombCiu_lbl.setText("Nombre");
 
@@ -68,18 +81,18 @@ public class Lista_ciudades extends javax.swing.JFrame {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaCiudades.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Nombre", "Aeropuerto", "País"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaCiudades);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -154,10 +167,26 @@ public class Lista_ciudades extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_ir_inicio_btnActionPerformed
 
-    private void AddListCiu_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddListCiu_btnActionPerformed
+    private void AddListCiu_btnActionPerformed(ActionEvent evt) {
         // TODO add your handling code here:
+        Grafo g = new Grafo (); 
+        String name = NombCiu_fieldl.getText();
+        String airport = AeroCiu_field.getText();
+        String country = PaisCiu_field.getText();
+        Ciudad c = new Ciudad(name, airport, country);
+        
+        g.addCiudad(c);
+        String [] agregar = new String [3];
+        agregar[0] = c.getNombre();
+        agregar[1] = c.getAeropuerto();
+        agregar[2] = c.getPais();
+        
+        tablaCiudades.AddRow(agregar); 
+    }
 
-    }//GEN-LAST:event_AddListCiu_btnActionPerformed
+    private void NombCiu_fieldlActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        // TODO add your handling code here:
+    }
 
     /**
      * @param args the command line arguments
@@ -206,6 +235,6 @@ public class Lista_ciudades extends javax.swing.JFrame {
     private javax.swing.JButton ir_inicio_btn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tablaCiudades;
     // End of variables declaration//GEN-END:variables
 }

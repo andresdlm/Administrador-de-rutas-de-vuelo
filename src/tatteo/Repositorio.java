@@ -19,6 +19,7 @@ public class Repositorio {
     private String[] lineaRuta = new String[arrayLength];
     private String[] origen = new String[lineaRuta.length];
     private String[] destino = new String[lineaRuta.length];
+    private int numeroVueloRuta[] = new int[lineaRuta.length];
 
     //Datos de ciudad
     private static String UbicacionRepoCiudad;
@@ -44,11 +45,11 @@ public class Repositorio {
     }
 
     //Ingresar datos en Repositorio de Rutas
-    public void IngresarDatos(String origen, String destino){
+    public void IngresarDatos(String origen, String destino, int numeroVueloRuta){
         try {
 
             FileWriter fileWriter = new FileWriter(repo_rutas, true);
-            fileWriter.write(origen +","+ destino +"\r\n");
+            fileWriter.write(origen +","+ destino + "," + numeroVueloRuta +"\r\n");
             fileWriter.close();
 
         }catch (IOException ex){
@@ -106,6 +107,7 @@ public class Repositorio {
             if(lineaRuta[i] != null){
                 origen[i] = lineaRuta[i].split(",")[0];
                 destino[i] = lineaRuta[i].split(",")[1];
+                numeroVueloRuta[i] = Integer.parseInt(lineaRuta[i].split(",")[2]);
             }
         }
     }
@@ -144,6 +146,8 @@ public class Repositorio {
     public String getDestino(int i) {
         return destino[i];
     }
+
+    public int getNumeroVueloRuta(int i) { return numeroVueloRuta[i]; }
 
     public String getCiudad(int i) {
         return ciudad[i];
