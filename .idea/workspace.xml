@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98ee3b9c-9624-4fce-b377-a8b3fab811ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tatteo/RepoVuelos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tatteo/Repositorio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
+            <state relative-caret-position="-88">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
@@ -26,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tatteo/RepoVuelos.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-433">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="220">
+              <caret line="200" column="8" lean-forward="true" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="8" />
               <folding>
                 <element signature="e#12334#12421#0" expanded="true" />
               </folding>
@@ -96,14 +95,14 @@
         <option value="$PROJECT_DIR$/src/documento/Repositorio.java" />
         <option value="$PROJECT_DIR$/src/tatteo/MatrizDeAdyacencia.java" />
         <option value="$PROJECT_DIR$/src/tatteo/Repositorio.java" />
-        <option value="$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java" />
         <option value="$PROJECT_DIR$/src/Inicio.java" />
         <option value="$PROJECT_DIR$/src/tatteo/view/Inicio.java" />
         <option value="$PROJECT_DIR$/src/tatteo/RepoVuelos.txt" />
+        <option value="$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -170,6 +169,12 @@
               <item name="Tatteo" type="616d4139:PackageViewModuleNode" />
               <item name="tatteo" type="1f31426a:PackageElementNode" />
             </path>
+            <path>
+              <item name="Tatteo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tatteo" type="616d4139:PackageViewModuleNode" />
+              <item name="tatteo" type="1f31426a:PackageElementNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550079873864" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550081525955" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -274,7 +279,7 @@
       <workItem from="1549772954537" duration="81000" />
       <workItem from="1549848366559" duration="772000" />
       <workItem from="1549855858212" duration="163000" />
-      <workItem from="1549930457412" duration="7935000" />
+      <workItem from="1549930457412" duration="9081000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego la clase Matriz de Adyacencia">
       <created>1550009002026</created>
@@ -294,7 +299,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48274000" />
+    <option name="totallyTimeSpent" value="49420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -448,16 +453,6 @@
     <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-433">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#12334#12421#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
@@ -474,15 +469,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tatteo/RepoVuelos.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tatteo/Repositorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="-88">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="200" column="8" lean-forward="true" selection-start-line="200" selection-start-column="8" selection-end-line="200" selection-end-column="8" />
+          <folding>
+            <element signature="e#12334#12421#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

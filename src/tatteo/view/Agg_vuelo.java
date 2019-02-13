@@ -3,7 +3,14 @@ package tatteo.view;
 
 public class Agg_vuelo extends javax.swing.JFrame {
 
-    
+    private static String origen;
+    private static String destino;
+    private static String duracion;
+    private static String nVuelo;
+    private static String aerolinea;
+    private static String costoDeVoleto;
+
+
     public Agg_vuelo() {
         initComponents();
         setLocationRelativeTo(this);
@@ -190,8 +197,8 @@ public class Agg_vuelo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void ori_fieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ori_fieldActionPerformed
-        // TODO add your handling code here:
+    private void ori_fieldActionPerformed(java.awt.event.ActionEvent evt) {
+        
     }//GEN-LAST:event_ori_fieldActionPerformed
 
     private void ir_inicio_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ir_inicio_btnActionPerformed
