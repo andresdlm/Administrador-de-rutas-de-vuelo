@@ -1,10 +1,5 @@
 package tatteo.view;
 
-
-import tatteo.view.Lista_vuelos;
-import tatteo.view.Agg_vuelo;
-
-
 public class Inicio extends javax.swing.JFrame {
 
     

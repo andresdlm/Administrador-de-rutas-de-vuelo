@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98ee3b9c-9624-4fce-b377-a8b3fab811ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/Lista_de_vuelos.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/Lista_de_vuelos.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/agg_vuelo.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/tatteo/view/agg_vuelo.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/agg_vuelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tatteo/view/agg_vuelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/del_vuelo.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tatteo/view/del_vuelo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/Inicio$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/Inicio$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/Inicio$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/Inicio$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/Inicio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/documento/Repositorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/documento/repositorio_ciudades.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/documento/repositorio_vuelos.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/Lista_de_vuelos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/agg_vuelo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/del_vuelo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tatteo/tatteo/view/del_vuelo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tatteo/view/Inicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tatteo/view/Inicio.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/tatteo/Repositorio.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -32,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/src/tatteo/MatrizDeAdyacencia.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2310">
-              <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+              <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#781#782#0" expanded="true" />
@@ -49,10 +66,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="66">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
               <folding>
                 <element signature="e#12334#12421#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tatteo/view/Inicio.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -83,6 +110,8 @@
         <option value="$PROJECT_DIR$/src/tatteo/MatrizDeAdyacencia.java" />
         <option value="$PROJECT_DIR$/src/tatteo/Repositorio.java" />
         <option value="$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java" />
+        <option value="$PROJECT_DIR$/src/Inicio.java" />
+        <option value="$PROJECT_DIR$/src/tatteo/view/Inicio.java" />
       </list>
     </option>
   </component>
@@ -153,6 +182,12 @@
               <item name="Tatteo" type="616d4139:PackageViewModuleNode" />
               <item name="tatteo" type="1f31426a:PackageElementNode" />
             </path>
+            <path>
+              <item name="Tatteo" type="58d84e3e:PackageViewProjectNode" />
+              <item name="Tatteo" type="616d4139:PackageViewModuleNode" />
+              <item name="tatteo" type="1f31426a:PackageElementNode" />
+              <item name="view" type="1f31426a:PackageElementNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -162,7 +197,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550076562133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550078940170" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -188,7 +223,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Repositorio">
+  <component name="RunManager" selected="Application.Inicio (1)">
+    <configuration name="Inicio (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tatteo.view.Inicio" />
+      <module name="Tatteo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tatteo.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Inicio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Inicio" />
       <module name="Tatteo" />
@@ -214,9 +262,11 @@
     <list>
       <item itemvalue="Application.Repositorio" />
       <item itemvalue="Application.Inicio" />
+      <item itemvalue="Application.Inicio (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Inicio (1)" />
         <item itemvalue="Application.Repositorio" />
         <item itemvalue="Application.Inicio" />
       </list>
@@ -242,7 +292,7 @@
       <workItem from="1549772954537" duration="81000" />
       <workItem from="1549848366559" duration="772000" />
       <workItem from="1549855858212" duration="163000" />
-      <workItem from="1549930457412" duration="5200000" />
+      <workItem from="1549930457412" duration="6860000" />
     </task>
     <task id="LOCAL-00001" summary="Se agrego la clase Matriz de Adyacencia">
       <created>1550009002026</created>
@@ -251,14 +301,22 @@
       <option name="project" value="LOCAL" />
       <updated>1550009002027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se cambio toda la interfaz grafica">
+      <created>1550076571767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1550076571767</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45539000" />
+    <option name="totallyTimeSpent" value="47199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -274,10 +332,10 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32921812" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.39917696" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32921812" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="right" id="Theme Preview" order="0" />
@@ -296,7 +354,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agrego la clase Matriz de Adyacencia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agrego la clase Matriz de Adyacencia" />
+    <MESSAGE value="Se cambio toda la interfaz grafica" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se cambio toda la interfaz grafica" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/tatteo/view/del_vuelo.java">
@@ -309,13 +368,6 @@
     <entry file="file://$PROJECT_DIR$/repositorio_vuelos.txt" />
     <entry file="file://$PROJECT_DIR$/repositorio_ciudades.txt" />
     <entry file="file://$PROJECT_DIR$/src/documento/repositorio_ciudades" />
-    <entry file="file://$PROJECT_DIR$/src/Inicio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
-          <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/..">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -371,7 +423,7 @@
     <entry file="file://$PROJECT_DIR$/src/tatteo/Repositorio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -385,7 +437,7 @@
     <entry file="file://$PROJECT_DIR$/src/tatteo/MatrizDeAdyacencia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2310">
-          <caret line="105" column="1" lean-forward="true" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
+          <caret line="105" column="1" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#781#782#0" expanded="true" />
@@ -398,9 +450,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
+    <entry file="file://$PROJECT_DIR$/src/Inicio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="865">
+          <caret line="123" column="26" lean-forward="true" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tatteo/view/Inicio.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tatteo/view/Agg_vuelo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
             <element signature="e#12334#12421#0" expanded="true" />
           </folding>
