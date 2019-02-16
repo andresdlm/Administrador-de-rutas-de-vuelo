@@ -141,7 +141,7 @@ public class Generar_plan extends javax.swing.JFrame {
 
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JLabel Criterio_lbl;
     private javax.swing.JLabel Destino_lbl;
     private javax.swing.JLabel GenerarPlan_lbl;
@@ -151,5 +151,5 @@ public class Generar_plan extends javax.swing.JFrame {
     private javax.swing.JButton generar_plan_btn;
     private javax.swing.JButton ir_inicio_btn;
     private javax.swing.JTextField ori_field;
-    // End of variables declaration//GEN-END:variables
+
 }

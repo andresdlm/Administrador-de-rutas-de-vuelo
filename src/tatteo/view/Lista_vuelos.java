@@ -1,4 +1,5 @@
 package tatteo.view;
+import tatteo.Ciudad;
 import tatteo.Grafo;
 
 import javax.swing.*;
@@ -163,8 +164,8 @@ public class Lista_vuelos extends javax.swing.JFrame {
       
     private void modif_vuelo_btnActionPerformed(java.awt.event.ActionEvent evt) {
         Modif_vuelo modif_vuelo = new Modif_vuelo(inicio, this);
-        modif_vuelo.cbox_origen = agg_vuelo.cbox_origen;
-        modif_vuelo.cbox_destino = agg_vuelo.cbox_destino;
+        modif_vuelo.cbox_destino.setModel(new javax.swing.DefaultComboBoxModel<>(grafo.nombresCiudades(grafo.getCiudades().size())));
+        modif_vuelo.cbox_origen.setModel(new javax.swing.DefaultComboBoxModel<>(grafo.nombresCiudades(grafo.getCiudades().size())));
         modif_vuelo.setVisible(true);
         fila = tablaVuelos.getSelectedRow(); 
         
@@ -200,7 +201,7 @@ public class Lista_vuelos extends javax.swing.JFrame {
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton add_vuelo_btn;
     private javax.swing.JButton del_vuelo_btn;
     private javax.swing.JButton ir_inicio_btn;
@@ -208,7 +209,7 @@ public class Lista_vuelos extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton modif_vuelo_btn;
     public javax.swing.JTable tablaVuelos;
-    // End of variables declaration//GEN-END:variables
+
 
     public JTable getTablaVuelos() {
         return tablaVuelos;

@@ -151,7 +151,7 @@ public class Agg_archivo extends javax.swing.JFrame {
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton guardar_btn;
     private javax.swing.JButton ir_inicio_btn;
     private javax.swing.JLabel jLabel1;
@@ -161,5 +161,5 @@ public class Agg_archivo extends javax.swing.JFrame {
     private javax.swing.JTextField repoC_field;
     private javax.swing.JTextField repoR_field;
     private javax.swing.JTextField repoV_field;
-    // End of variables declaration//GEN-END:variables
+
 }

@@ -10,7 +10,7 @@ public class Ciudad {
     private int numCiudad = 0 ;//Atributo del objeto
     private static int num = 0; //Lleva la cuenta de los objetos creados
 
-    private List<Vuelo> vuelos;
+    private static List<Vuelo> vuelos;
 
 
     //Constructor
@@ -64,6 +64,8 @@ public class Ciudad {
         
         return v; 
     }
+
+
 
     //Getters
     public String getNombre() {

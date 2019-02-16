@@ -199,7 +199,7 @@ public class Lista_ciudades extends javax.swing.JFrame {
         return tablaCiudades;
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JLabel AddCiu_lbl;
     private javax.swing.JButton AddListCiu_btn;
     private javax.swing.JTextField AeroCiu_field;
@@ -212,5 +212,5 @@ public class Lista_ciudades extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable tablaCiudades;
-    // End of variables declaration//GEN-END:variables
+
 }

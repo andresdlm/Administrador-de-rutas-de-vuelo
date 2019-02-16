@@ -183,6 +183,9 @@ public class Inicio extends javax.swing.JFrame {
         lista_vuelos.defaultTableModel = (DefaultTableModel) lista_vuelos.getTablaVuelos().getModel();
         this.defaultTableModel = (DefaultTableModel) this.tablaInicio.getModel();
         int aux1, aux2;
+        Vuelo vuelo;
+        Ciudad ciudadOrigen = null, ciudadDestino = null;
+
         for(int i = 0; i < repositorio.lineas_sin_null(repositorio.getRepo_vuelos()); i++) {
             String[] agregar = new String[4];
             agregar[0] = repositorio.getOrigen(i);
@@ -197,7 +200,20 @@ public class Inicio extends javax.swing.JFrame {
             agregar2[3] = String.valueOf(repositorio.getNumeroVuelo(i));
             agregar2[4] = repositorio.getAerolinea(i);
             agregar2[5] = String.valueOf(repositorio.getCostoVuelo(i));
+            int k;
             lista_vuelos.defaultTableModel.addRow(agregar2);
+            for(int j = 0; j<lista_ciudades.grafo.getCiudades().size();j++){
+                if(lista_ciudades.grafo.getCiudades().get(j).getNombre().equals(agregar[0])){
+                    ciudadOrigen = lista_ciudades.grafo.getCiudades().get(j);
+                }
+                if(lista_ciudades.grafo.getCiudades().get(j).getNombre().equals(agregar[1])) {
+                    ciudadDestino = lista_ciudades.grafo.getCiudades().get(j);
+                }
+            }
+            vuelo = new Vuelo(ciudadOrigen,ciudadDestino,repositorio.getDuracionVuelo(i),repositorio.getCostoVuelo(i),agregar[2],agregar2[4]);
+            if(lista_ciudades.grafo.getCiudades().get(0) != null){
+                lista_ciudades.grafo.getCiudades().get(0).addVuelo(vuelo);
+            }
         }
     }
 

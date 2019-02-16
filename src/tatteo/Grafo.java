@@ -17,5 +17,13 @@ public class Grafo {
         return ciudades;
     }
 
+    public String[] nombresCiudades(int size){
+        String[] nombresdeCiudades = new String[size];
+        for(int i=0; i < size ; i++){
+            nombresdeCiudades[i] = this.getCiudades().get(i).getNomAerPais();
+        }
+
+        return nombresdeCiudades;
+    }
 
 }

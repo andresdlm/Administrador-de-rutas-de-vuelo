@@ -82,14 +82,14 @@ public class Modif_vuelo extends javax.swing.JFrame {
         Dur_lbl.setFont(new java.awt.Font("Swis721 Lt BT", 1, 14)); // NOI18N
         Dur_lbl.setText("Duración");
 
-        cbox_origen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbox_origen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {}));
         cbox_origen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbox_origenActionPerformed(evt);
             }
         });
 
-        cbox_destino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbox_destino.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] {}));
         cbox_destino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbox_destinoActionPerformed(evt);
@@ -183,13 +183,13 @@ public class Modif_vuelo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cbox_origenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_origenActionPerformed
+    private void cbox_origenActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }//GEN-LAST:event_cbox_origenActionPerformed
+    }
 
-    private void cbox_destinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbox_destinoActionPerformed
+    private void cbox_destinoActionPerformed(java.awt.event.ActionEvent evt) {
 
-    }//GEN-LAST:event_cbox_destinoActionPerformed
+    }
 
     //Campo de origen NO TOCAR
     private void ori_fieldActionPerformed(java.awt.event.ActionEvent evt) {
@@ -216,7 +216,7 @@ public class Modif_vuelo extends javax.swing.JFrame {
 
         int item = 0;
         while (item < lista_ciudades.getGrafo().getCiudades().size()){
-            if(lista_ciudades.getGrafo().getCiudades().get(item).getNombre().equals(cbox_origen) ){
+            if(lista_ciudades.getGrafo().getCiudades().get(item).getNombre().equals(cbox_origen.getSelectedItem()) ){
                 c1= lista_ciudades.getGrafo().getCiudades().get(item);
             }else {
                 item ++;
@@ -225,7 +225,7 @@ public class Modif_vuelo extends javax.swing.JFrame {
 
         item = 0;
         while (item < lista_ciudades.getGrafo().getCiudades().size()){
-            if(lista_ciudades.getGrafo().getCiudades().get(item).getNombre().equals(cbox_destino) ){
+            if(lista_ciudades.getGrafo().getCiudades().get(item).getNombre().equals(cbox_destino.getSelectedItem()) ){
                 c2 = lista_ciudades.getGrafo().getCiudades().get(item);
             }else {
                 item ++;
@@ -260,7 +260,7 @@ public class Modif_vuelo extends javax.swing.JFrame {
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JLabel Aero_lbl;
     private javax.swing.JLabel Costo_lbl;
     private javax.swing.JLabel Destino_lbl;
@@ -277,5 +277,5 @@ public class Modif_vuelo extends javax.swing.JFrame {
     private javax.swing.JTextField numF_field;
     private javax.swing.JTextField price_field;
     private javax.swing.JButton ver_lista_btn;
-    // End of variables declaration//GEN-END:variables
+
 }

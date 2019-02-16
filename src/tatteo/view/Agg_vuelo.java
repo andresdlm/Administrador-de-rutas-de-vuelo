@@ -278,7 +278,7 @@ public class Agg_vuelo extends javax.swing.JFrame {
     }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+
     private javax.swing.JButton AddListVue_btn;
     private javax.swing.JLabel Aero_lbl;
     private javax.swing.JLabel Costo_lbl;
@@ -295,5 +295,5 @@ public class Agg_vuelo extends javax.swing.JFrame {
     private javax.swing.JTextField numF_field;
     private javax.swing.JTextField price_field;
     private javax.swing.JButton ver_lista_btn;
-    // End of variables declaration//GEN-END:variables
+
 }
