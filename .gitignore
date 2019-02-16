@@ -1,11 +1,17 @@
 out/*
+out
+out/
 ...
 .idea/*
+.idea
+idea/
 *.iws
 *.iml
 *.ipr
 nbproject/private/
 build/
+build/*
+build
 nbbuild/
 dist/
 nbdist/

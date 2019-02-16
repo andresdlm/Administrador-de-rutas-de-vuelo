@@ -1,26 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tatteo;
 
-/**
- *
- * @author andrea
- */
 public class Vuelo {
-        
+
     private Ciudad origen;
-    private Ciudad destino; 
-    private double duracion; 
-    private double costo; 
-    private int numV; 
-    private String lineaA; 
-   
- 
+    private Ciudad destino;
+    private int duracion;
+    private int costo;
+    private String  numV;
+    private String lineaA;
+
+
     //Constructor
-    public Vuelo(Ciudad origen, Ciudad destino, double duracion, double costo, int numV, String lineaA) {
+    public Vuelo(Ciudad origen, Ciudad destino, int duracion, int costo, String numV, String lineaA) {
         this.origen = origen; 
         this.destino = destino; 
         this.duracion = duracion; 
@@ -38,15 +29,15 @@ public class Vuelo {
         return destino;
     }
 
-    public double getDuracion() {
+    public int getDuracion() {
         return duracion;
     }
 
-    public double getCosto() {
+    public int getCosto() {
         return costo;
     }
 
-    public int getNumV() {
+    public String getNumV() {
         return numV;
     }
 
@@ -63,15 +54,15 @@ public class Vuelo {
         this.destino = destino;
     }
 
-    public void setDuracion(double duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 
-    public void setCosto(double costo) {
+    public void setCosto(int costo) {
         this.costo = costo;
     }
 
-    public void setNumV(int numV) {
+    public void setNumV(String numV) {
         this.numV = numV;
     }
 
