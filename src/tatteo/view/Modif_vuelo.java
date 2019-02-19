@@ -1,5 +1,6 @@
 package tatteo.view;
-import tatteo.Ciudad;
+
+import tatteo.*;
 
 
 public class Modif_vuelo extends javax.swing.JFrame {

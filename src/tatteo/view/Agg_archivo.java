@@ -1,8 +1,7 @@
 package tatteo.view;
 
 import javax.swing.JOptionPane;
-import tatteo.Repositorio;
-
+import tatteo.*;
 import java.io.IOException;
 
 

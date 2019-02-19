@@ -1,11 +1,7 @@
 package tatteo.view;
 
 import javax.swing.table.DefaultTableModel;
-import tatteo.Ciudad;
-import tatteo.Grafo;
-import tatteo.Repositorio;
-import tatteo.Vuelo;
-
+import tatteo.*;
 import java.awt.event.ActionEvent;
 
 public class Agg_vuelo extends javax.swing.JFrame {

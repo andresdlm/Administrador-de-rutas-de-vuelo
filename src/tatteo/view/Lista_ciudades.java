@@ -1,11 +1,8 @@
 package tatteo.view;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import tatteo.Ciudad;
-import tatteo.Grafo;
-import tatteo.Repositorio;
-
 import java.awt.event.ActionEvent;
+import tatteo.*;
 
 
 public class Lista_ciudades extends javax.swing.JFrame {

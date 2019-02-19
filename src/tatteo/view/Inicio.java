@@ -1,8 +1,7 @@
 package tatteo.view;
 
-import tatteo.Ciudad;
-import tatteo.Repositorio;
-import tatteo.Vuelo;
+
+import tatteo.*;
 
 
 import javax.swing.*;

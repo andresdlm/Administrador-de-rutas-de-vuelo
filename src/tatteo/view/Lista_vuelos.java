@@ -1,10 +1,8 @@
 package tatteo.view;
-import tatteo.Ciudad;
-import tatteo.Grafo;
 
 import javax.swing.*;
-import javax.swing.event.ListDataListener;
 import javax.swing.table.DefaultTableModel;
+import tatteo.*;
 
 public class Lista_vuelos extends javax.swing.JFrame {
 
